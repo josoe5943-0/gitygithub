@@ -158,4 +158,8 @@ Después de la instalación, abre **Git Bash** y configura tu nombre y correo el
 git config --global user.name "Tu Nombre"
 git config --global user.email "tuemail@example.com"
 
+<p align="center">
+  <img src="imagenes/github.png" alt="Instalación de Git" width="450" height="350">
+</p>
+
 consejito extra:es mejor en linux 
