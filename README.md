@@ -10,7 +10,7 @@ Bienvenido a mi resumen personal del curso de **Git y GitHub**.
 
 # ¿Qué es un control de versiones?
 
-Un control de versiones es un sistema que registra cada cambio que se realiza en el código fuente de un proyecto.
+El control de versiones es una herramienta que guarda el historial de todos los cambios realizados en los archivos de un proyecto.
 
 ---
 
@@ -20,5 +20,5 @@ Un control de versiones es un sistema que registra cada cambio que se realiza en
 
 ---
 
-Esto te permite tener un histórico de todos los cambios producidos en sus ficheros, saber quién lo hizo y cuándo.
+Esto permite conocer qué modificaciones se hicieron, quién las realizó y en qué momento, facilitando el seguimiento y la gestión del proyecto a lo largo del tiempo.
 
