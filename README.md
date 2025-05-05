@@ -89,3 +89,41 @@ Un **repositorio** es un lugar donde se guarda el código fuente y su historial 
 ```bash
 mkdir miproyecto
 cd miproyecto
+✅ 1. Inicializar Git
+bash
+Copiar
+Editar
+git init
+✅ 2. Crear un archivo (ejemplo)
+bash
+Copiar
+Editar
+echo "# Mi proyecto" > README.md
+✅ 3. Agregar archivo al staging
+bash
+Copiar
+Editar
+git add README.md
+✅ 4. Hacer el primer commit
+bash
+Copiar
+Editar
+git commit -m "Primer commit"
+¿Quieres incluir el repositorio en GitHub también? Puedes usar git remote add origin <URL> y luego git push -u origin main.
+
+❓ ¿Este proyecto tiene commits?
+Un proyecto tiene commits solo si ya ejecutaste:
+
+bash
+Copiar
+Editar
+git commit -m "mensaje"
+🔹 Si solo hiciste git init y no has hecho ningún commit aún → No tiene commits.
+🔹 Si ya hiciste un commit con mensaje → Sí tiene al menos un commit.
+
+✅ Para verificar si tu proyecto tiene commits:
+
+bash
+Copiar
+Editar
+git log
