@@ -71,3 +71,21 @@ Un **repositorio** es un lugar donde se guarda el código fuente y su historial 
 <p align="center">
   <img src="imagenes/reposi.png" alt="Repositorio" width="450" height="350">
 </p>
+
+# 🚀 INICIEMOS UN NUEVO PROYECTO GIT
+
+📌 A continuación, te muestro los comandos básicos para comenzar un proyecto Git desde cero.
+
+---
+
+<p align="center">
+  <img src="imagenes/inicio.png" alt="Iniciar proyecto Git" width="450" height="350">
+</p>
+
+---
+
+### ✅ 1. Crear la carpeta del proyecto
+
+```bash
+mkdir miproyecto
+cd miproyecto
