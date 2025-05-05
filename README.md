@@ -49,3 +49,15 @@ Esto permite conocer qué modificaciones se hicieron, quién las realizó y en q
 <p align="center">
   <img src="imagenes/history.png" alt="Historia de Git y GitHub" width="450" height="250">
 </p>
+
+# ¿Qué es GIT y GITHUB?
+
+**Git** es un sistema de control de versiones distribuido que ayuda a gestionar y hacer seguimiento de los cambios en los proyectos de software.
+
+**GitHub** es una plataforma basada en la web que aloja proyectos Git, facilitando la colaboración y el control de versiones entre desarrolladores.
+
+---
+
+<p align="center">
+  <img src="imagenes/git.png" alt="Git y GitHub" width="450" height="350">
+</p>
