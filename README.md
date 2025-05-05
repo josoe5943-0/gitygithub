@@ -129,7 +129,7 @@ Editar
 git log
 
 
-
+---
 
 
 # 💻 INSTALACIÓN DE GIT EN WINDOWS
