@@ -129,3 +129,32 @@ Editar
 git log
 
 
+# 💻 INSTALACIÓN DE GIT EN WINDOWS
+
+A continuación, te explico cómo instalar **Git** en tu sistema Windows.
+
+---
+
+### ✅ 1. Descargar Git
+
+- Ve a la página oficial de Git: [https://git-scm.com/download/win](https://git-scm.com/download/win).
+- El archivo de instalación se descargará automáticamente para **Windows**.
+
+---
+
+### ✅ 2. Ejecutar el instalador
+
+- Abre el archivo descargado (.exe) para iniciar el proceso de instalación.
+- En las opciones de instalación, puedes dejar las configuraciones predeterminadas, pero ten en cuenta lo siguiente:
+  - Selecciona **"Use Git from the Windows Command Prompt"** para poder usar Git desde la terminal de Windows.
+  - **Git Bash** será instalado por defecto, lo que te permitirá usar un terminal similar a Unix.
+
+---
+
+### ✅ 3. Configurar Git (opcional pero recomendado)
+
+Después de la instalación, abre **Git Bash** y configura tu nombre y correo electrónico:
+
+```bash
+git config --global user.name "Tu Nombre"
+git config --global user.email "tuemail@example.com"
