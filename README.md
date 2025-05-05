@@ -33,3 +33,19 @@ Esto permite conocer qué modificaciones se hicieron, quién las realizó y en q
 <p align="center">
   <img src="imagenes/importa.png" alt="Importancia del control de versiones" width="450" height="250">
 </p>
+
+# Historia de GIT Y GITHUB
+
+---
+
+1990s: Los primeros sistemas de control de versiones fueron creados.  
+2005: **Linus Torvalds** creó Git para gestionar el código del kernel de Linux.  
+2008: Se fundó **GitHub**, una plataforma para alojar proyectos Git en la web.  
+2018: **Microsoft** adquirió **GitHub**.  
+2024: **Git** y **GitHub** siguen siendo herramientas esenciales para el desarrollo de software, ampliamente utilizadas en la industria.
+
+---
+
+<p align="center">
+  <img src="imagenes/history.png" alt="Historia de Git y GitHub" width="450" height="250">
+</p>
