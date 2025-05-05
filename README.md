@@ -5,7 +5,7 @@ Bienvenido a mi resumen personal del curso de **Git y GitHub**.
 ---
 
 <p align="center">
-  <img src="imagenes/introgit.png" alt="Introducción Git" width="250" height="250">
+  <img src="imagenes/introgit.png" alt="Introducción Git" width="400" height="250">
 </p>
 
 
