@@ -61,3 +61,13 @@ Esto permite conocer qué modificaciones se hicieron, quién las realizó y en q
 <p align="center">
   <img src="imagenes/git.png" alt="Git y GitHub" width="450" height="350">
 </p>
+
+# ¿Qué es un repositorio?
+
+Un **repositorio** es un lugar donde se guarda el código fuente y su historial de cambios. Puede estar en tu máquina local o en una plataforma en línea como **GitHub**, permitiendo colaborar y gestionar proyectos de software.
+
+---
+
+<p align="center">
+  <img src="imagenes/reposi.png" alt="Repositorio" width="450" height="350">
+</p>
