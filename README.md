@@ -106,22 +106,16 @@ Un **repositorio** es un lugar donde se guarda el código fuente y su historial 
 ❓ ¿Este proyecto tiene commits?
 Un proyecto tiene commits solo si ya ejecutaste:
 
-bash
-Copiar
-Editar
-git commit -m "mensaje"
+    git commit -m "mensaje"
 🔹 Si solo hiciste git init y no has hecho ningún commit aún → No tiene commits.
 🔹 Si ya hiciste un commit con mensaje → Sí tiene al menos un commit.
 
 ✅ Para verificar si tu proyecto tiene commits:
-
-bash
-Copiar
-Editar
-git log
+```bash
+     git log
+     
 ```
 
----
 
 ---
 
