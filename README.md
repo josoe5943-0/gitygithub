@@ -277,49 +277,29 @@ Copiar
 Editar
 git checkout <nombre-de-la-rama>
 
-¿Qué son ramas, merge y cuáles son sus conflictos?
-<p align="center"> <strong>¿Qué son ramas, merge y cuáles son sus conflictos?</strong><br> <img src="imagenes/ramas.png" alt="Ramas y merge en Git" width="450" height="350"> </p>
-🏷️ Ramas (Branches) en Git
-Las ramas en Git son versiones independientes de tu proyecto donde puedes trabajar sin afectar a la rama principal (main). Son útiles para desarrollar nuevas características, corregir errores o probar algo sin comprometer el código en producción.
 
-Comando para crear una nueva rama:
-bash
-Copiar
-Editar
-git branch nombre-de-la-rama
-Comando para cambiar de rama:
-bash
-Copiar
-Editar
-git checkout nombre-de-la-rama
-Comando para ver todas las ramas:
-bash
-Copiar
-Editar
-git branch
-🔄 Merge (Fusión de Ramas)
-Cuando terminas el trabajo en una rama, puedes fusionarla con otra rama, generalmente con main. Este proceso se llama merge.
 
-Comando para hacer un merge:
-bash
-Copiar
-Editar
-git checkout main
-git merge nombre-de-la-rama
-Si no hay conflictos, Git combinará las ramas de manera automática.
+# Qué son ramas, merge y cuáles son sus conflictos
 
-⚠️ Conflictos en Git
-Un conflicto ocurre cuando Git no puede fusionar automáticamente las ramas porque los cambios en ambas ramas afectan a las mismas líneas del código. En ese caso, tendrás que resolver el conflicto manualmente.
+<p align="center">
+  <img src="imagenes/ramas.png" alt="Ramas en Git" width="450" height="350">
+</p>
 
-Comando para ver los archivos con conflictos:
-bash
-Copiar
-Editar
-git status
-Una vez resuelto el conflicto en los archivos, añade los cambios y realiza un nuevo commit:
+### 🔹 ¿Qué son las ramas en Git?
 
-bash
-Copiar
-Editar
-git add archivo-resuelto
-git commit -m "Resolver conflicto entre ramas"
+Las ramas en Git son como diferentes versiones del proyecto que permiten trabajar en distintas funcionalidades sin afectar el código principal. 
+
+### 🔹 ¿Qué es un Merge?
+
+Merge es el proceso de combinar dos ramas diferentes. Se hace para integrar cambios de una rama a otra.
+
+### 🔹 Conflictos de merge
+
+Cuando dos personas modifican la misma parte de un archivo, Git no sabe cuál cambio mantener, y eso genera un conflicto. Se debe resolver manualmente.
+
+### 🚀 Comandos para trabajar con ramas y merge
+
+1. **Crear una rama:**
+   ```bash
+   git branch <nombre-de-la-rama>
+
