@@ -239,3 +239,41 @@ Editar
 git push origin main
 
 ´´´
+🚀 ¿Qué es HEAD y para qué sirve?
+<p align="center"> <img src="imagenes/head.png" alt="HEAD en Git" width="450" height="350"> </p>
+HEAD es como el apuntador de tu proyecto. Te muestra en qué parte de la historia de tu código te encuentras.
+Cuando usas HEAD, estás viendo la última versión registrada en tu repositorio. Es esencial para saber en qué punto estás y para cambiar entre ramas o versiones de tu proyecto.
+
+¿Qué hace HEAD?
+Se mueve automáticamente cuando haces un commit.
+
+Te ayuda a navegar entre distintas versiones del proyecto.
+
+Es el punto de referencia de tu trabajo actual.
+
+Comandos relacionados con HEAD
+Ver HEAD actual:
+
+bash
+Copiar
+Editar
+git log -1
+Mover HEAD a un commit específico (deshacer cambios, revisar versiones anteriores):
+
+bash
+Copiar
+Editar
+git checkout <commit-id>
+Volver a la rama principal (main) después de moverse con HEAD:
+
+bash
+Copiar
+Editar
+git checkout main
+Mover HEAD a una rama específica:
+
+bash
+Copiar
+Editar
+git checkout <nombre-de-la-rama>
+
