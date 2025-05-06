@@ -303,3 +303,15 @@ Cuando dos personas modifican la misma parte de un archivo, Git no sabe cuál ca
    ```bash
    git branch <nombre-de-la-rama>
 
+Cambiarse a una rama:
+
+bash
+Copiar
+Editar
+git checkout <nombre-de-la-rama>
+Fusionar una rama con la rama principal (main):
+
+bash
+Copiar
+Editar
+git merge <nombre-de-la-rama>
