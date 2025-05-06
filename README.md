@@ -200,3 +200,11 @@ Antes de subir algo a GitHub, Git lo pasa por tres estados básicos, que se sien
 
 📸 Repository (commit) → Ya está listo y guardado oficialmente en la historia del proyecto. ¡Es como una foto que ya subiste a tu álbum de GitHub
 
+
+📝 Un commit, ¿qué es?
+<p align="center"> <img src="imagenes/commit.png" alt="¿Qué es un commit?" width="450" height="350"> </p>
+💡 ¿Qué es un commit?
+Un commit es como dejar una nota con la foto del momento de tu proyecto.
+Dice: “esto fue lo que hice” y queda guardado para siempre.
+Cada vez que haces un commit, estás construyendo la historia de tu código, paso a paso.
+Y sí, puedes volver atrás si algo explota. 😅
