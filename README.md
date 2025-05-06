@@ -183,3 +183,46 @@ Esto debería mostrar la versión de Git instalada.
 
 ---
 
+✨ States y commits de Git y GitHub
+<p align="center"> <img src="imagenes/states.png" alt="Estados de Git y GitHub" width="450" height="350"> </p>
+¿Sabías que en Git todo pasa por 3 estados antes de subirlo a GitHub?
+Es como cocinar:
+
+Working Directory: estás cocinando, todo es un desastre pero vas viendo cómo queda.
+
+Staging Area: ya serviste el plato pero aún no lo diste a probar.
+
+Repository (commit): lo serviste y tomaste foto pa’ subir a Instagram (GitHub).
+
+Y para subirlo a tu repositorio, ejecuta:
+
+bash
+Copiar código
+git add README.md imagenes/states.png
+git commit -m "Agregar sección sobre estados y commits de Git con imagen"
+git push origin main
+¿Quieres que ahora preparemos otra sección o tienes algo más que quieras explicar?
+
+
+
+
+
+
+Dijiste:
+aslo con bonita letra como antes estabamos haciendo
+
+
+ChatGPT dijo:
+Perfecto, aquí tienes el bloque completo con formato bonito estilo Markdown, al igual que las secciones anteriores. Esto puedes pegarlo directamente en tu README.md y se verá bien tanto en GitHub como en editores que soporten Markdown:
+
+🧠 States y commits de Git y GitHub
+<p align="center"> <img src="imagenes/states.png" alt="Estados de Git y GitHub" width="450" height="350"> </p>
+🤔 ¿Y eso de los estados qué onda?
+Antes de subir algo a GitHub, Git lo pasa por tres estados básicos, que se sienten más o menos así:
+
+🔧 Working Directory → Estás editando archivos como loco, probando y rompiendo cosas.
+
+📦 Staging Area → Elegiste qué cosas sí quieres guardar. Es como tenerlo listo pero no entregado.
+
+📸 Repository (commit) → Ya está listo y guardado oficialmente en la historia del proyecto. ¡Es como una foto que ya subiste a tu álbum de GitHub
+
