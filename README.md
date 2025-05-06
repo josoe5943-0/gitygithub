@@ -127,16 +127,21 @@ bash
 Copiar
 Editar
 git log
-
-
-
----
----
-
-<p align="center">
-  <strong>Instalación de Git y GitHub en Windows</strong><br>
-  <img src="imagenes/github.png" alt="Instalación de Git y GitHub en Windows" width="500">
-</p>
+```
 
 ---
 
+---
+
+# 💻 INSTALACIÓN DE GIT EN WINDOWS
+
+A continuación, te muestro paso a paso cómo instalar Git en tu sistema Windows.
+
+---
+
+### ✅ 1. Descargar Git
+
+```bash
+# Abre tu navegador y ve a:
+https://git-scm.com/download/win
+# La descarga para Windows iniciará automáticamente.
