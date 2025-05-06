@@ -129,7 +129,7 @@ Editar
 git log
 
 
-# 💻 INSTALACIÓN DE GIT EN WINDOWS
+### 💻 INSTALACIÓN DE GIT EN WINDOWS
 
 A continuación, te explico cómo instalar **Git** en tu sistema Windows.
 
