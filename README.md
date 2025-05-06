@@ -208,3 +208,34 @@ Un commit es como dejar una nota con la foto del momento de tu proyecto.
 Dice: “esto fue lo que hice” y queda guardado para siempre.
 Cada vez que haces un commit, estás construyendo la historia de tu código, paso a paso.
 Y sí, puedes volver atrás si algo explota. 😅
+
+
+💡 ¿Y cómo se hace un commit?
+Hacer un commit es como decir:
+
+"Listo, terminé esta parte. ¡Guárdalo así!"
+
+Es súper fácil, solo tienes que seguir estos pasos:
+
+🧩 Pasos para hacer un commit
+bash
+Copiar
+Editar
+# 1. Ver qué archivos cambiaron
+git status
+
+# 2. Añadir archivos al área de preparación (staging)
+git add archivo.txt
+
+# O si quieres agregar todos los archivos modificados:
+git add .
+
+# 3. Hacer el commit con un mensaje
+git commit -m "Explicación corta de lo que hiciste"
+🚀 Subirlo al repositorio remoto (GitHub)
+bash
+Copiar
+Editar
+git push origin main
+
+´´´
