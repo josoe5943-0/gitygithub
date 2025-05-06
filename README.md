@@ -139,9 +139,47 @@ A continuación, te muestro paso a paso cómo instalar Git en tu sistema Windows
 
 ---
 
-### ✅ 1. Descargar Git
+Descargar Git:
 
-```bash
-# Abre tu navegador y ve a:
-https://git-scm.com/download/win
-# La descarga para Windows iniciará automáticamente.
+Ve a la página oficial de Git: https://git-scm.com/download/win.
+
+El archivo de instalación se descargará automáticamente para Windows.
+
+Ejecutar el instalador:
+
+Abre el archivo descargado (.exe) para iniciar el proceso de instalación.
+
+En las opciones de instalación, puedes dejar las configuraciones predeterminadas, pero ten en cuenta lo siguiente:
+
+Selecciona "Use Git from the Windows Command Prompt" para poder usar Git desde la terminal de Windows.
+
+Git Bash será instalado por defecto, lo que te permitirá usar un terminal similar a Unix.
+
+Configurar Git (opcional pero recomendado):
+
+Después de la instalación, abre Git Bash y configura tu nombre y correo electrónico:
+
+bash
+Copiar código
+git config --global user.name "Tu Nombre"
+git config --global user.email "tuemail@example.com"
+Verificar la instalación:
+
+Abre Git Bash o la terminal de Windows y ejecuta:
+
+bash
+Copiar código
+git --version
+Esto debería mostrar la versión de Git instalada.
+
+¡Listo! Ahora tienes Git instalado y configurado en tu sistema Windows 10.
+
+---
+
+<p align="center">
+  <strong>Instalación de Git y GitHub en Windows</strong><br>
+  <img src="imagenes/github.png" alt="Instalación de Git y GitHub en Windows" width="450" height="350">
+</p>
+
+---
+
