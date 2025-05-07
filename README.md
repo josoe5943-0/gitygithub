@@ -86,50 +86,36 @@ Un **repositorio** es un lugar donde se guarda el código fuente y su historial 
 
 ### ✅ 1. Crear la carpeta del proyecto
 
-```bash
-mkdir miproyecto
-cd miproyecto
+    ```bash
+    mkdir miproyecto
+    cd miproyecto
 ✅ 1. Inicializar Git
-bash
-Copiar
-Editar
-git init
+
+     git init
 ✅ 2. Crear un archivo (ejemplo)
-bash
-Copiar
-Editar
-echo "# Mi proyecto" > README.md
+
+    echo "# Mi proyecto" > README.md
 ✅ 3. Agregar archivo al staging
-bash
-Copiar
-Editar
-git add README.md
+
+    git add README.md
 ✅ 4. Hacer el primer commit
-bash
-Copiar
-Editar
-git commit -m "Primer commit"
+
+    git commit -m "Primer commit"
 ¿Quieres incluir el repositorio en GitHub también? Puedes usar git remote add origin <URL> y luego git push -u origin main.
 
 ❓ ¿Este proyecto tiene commits?
 Un proyecto tiene commits solo si ya ejecutaste:
 
-bash
-Copiar
-Editar
-git commit -m "mensaje"
+    git commit -m "mensaje"
 🔹 Si solo hiciste git init y no has hecho ningún commit aún → No tiene commits.
 🔹 Si ya hiciste un commit con mensaje → Sí tiene al menos un commit.
 
 ✅ Para verificar si tu proyecto tiene commits:
-
-bash
-Copiar
-Editar
-git log
+```bash
+     git log
+     
 ```
 
----
 
 ---
 
@@ -159,17 +145,15 @@ Configurar Git (opcional pero recomendado):
 
 Después de la instalación, abre Git Bash y configura tu nombre y correo electrónico:
 
-bash
-Copiar código
-git config --global user.name "Tu Nombre"
-git config --global user.email "tuemail@example.com"
+
+      git config --global user.name "Tu Nombre"
+      git config --global user.email "tuemail@example.com"
 Verificar la instalación:
 
 Abre Git Bash o la terminal de Windows y ejecuta:
 
-bash
-Copiar código
-git --version
+
+    git --version
 Esto debería mostrar la versión de Git instalada.
 
 ¡Listo! Ahora tienes Git instalado y configurado en tu sistema Windows 10.
@@ -222,24 +206,26 @@ bash
 Copiar
 Editar
 # 1. Ver qué archivos cambiaron
-git status
+    
+    git status
 
 # 2. Añadir archivos al área de preparación (staging)
-git add archivo.txt
+    git add archivo.txt
 
 # O si quieres agregar todos los archivos modificados:
-git add .
+    git add .
 
 # 3. Hacer el commit con un mensaje
-git commit -m "Explicación corta de lo que hiciste"
+    git commit -m 
+  "Explicación corta de lo que hiciste"
 🚀 Subirlo al repositorio remoto (GitHub)
-bash
-Copiar
-Editar
-git push origin main
+
+    git push origin main
 
 ´´´
-🚀 ¿Qué es HEAD y para qué sirve?
+
+
+##🚀 ¿Qué es HEAD y para qué sirve?
 <p align="center"> <img src="imagenes/head.png" alt="HEAD en Git" width="450" height="350"> </p>
 HEAD es como el apuntador de tu proyecto. Te muestra en qué parte de la historia de tu código te encuentras.
 Cuando usas HEAD, estás viendo la última versión registrada en tu repositorio. Es esencial para saber en qué punto estás y para cambiar entre ramas o versiones de tu proyecto.
@@ -254,28 +240,18 @@ Es el punto de referencia de tu trabajo actual.
 Comandos relacionados con HEAD
 Ver HEAD actual:
 
-bash
-Copiar
-Editar
-git log -1
+    ```bash
+    git log -1
 Mover HEAD a un commit específico (deshacer cambios, revisar versiones anteriores):
-
-bash
-Copiar
-Editar
-git checkout <commit-id>
+      
+    ```bash
+    git checkout <commit-id>
 Volver a la rama principal (main) después de moverse con HEAD:
 
-bash
-Copiar
-Editar
-git checkout main
+    git checkout main
 Mover HEAD a una rama específica:
 
-bash
-Copiar
-Editar
-git checkout <nombre-de-la-rama>
+      git checkout <nombre-de-la-rama>
 
 
 
