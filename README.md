@@ -403,27 +403,27 @@ El comando **`git push`** envía uno o más refs (ramas, etiquetas) desde tu rep
 
 ### 🛠️ Comandos y variantes
 
-```bash
+
 # Enviar la rama actual al remoto configurado (origin)
-git push origin HEAD
+    git push origin HEAD
 
 # Establecer upstream y enviar (solo la primera vez)
-git push -u origin <nombre-de-la-rama>
+    git push -u origin <nombre-de-la-rama>
 
 # Enviar todas las ramas al remoto
-git push --all origin
+    git push --all origin
 
 # Enviar etiquetas
-git push --tags origin
+    git push --tags origin
 
 # Eliminar una rama remota
-git push origin --delete <nombre-de-la-rama>
+    git push origin --delete <nombre-de-la-rama>
 
 # Forzar el push (con precaución)
-git push --force-with-lease origin <rama>
+    git push --force-with-lease origin <rama>
 
 # Espejar todo el repositorio (refs, tags, ramas)
-git push --mirror <URL-remoto>
+    git push --mirror <URL-remoto>
 ```
 
 ### ⚠️ Buenas prácticas
@@ -444,26 +444,27 @@ El **`git pull`** combina dos operaciones: `git fetch` (descarga objetos y refs)
 
 ### 🛠️ Comandos y variantes
 
-```bash
+
 # Pull estándar (fetch + merge)
-git pull origin <rama>
+
+    git pull origin <rama>
 
 # Pull con rebase en lugar de merge
-git pull --rebase origin <rama>
+    git pull --rebase origin <rama>
 
 # Solo fetch (sin merge/rebase)
-git fetch origin <rama>
+    git fetch origin <rama>
 
 # Fetch de todas las ramas y tags
-git fetch --all --tags
+    git fetch --all --tags
 
 # Fetch y limpiar ramas remotas eliminadas
-git fetch -p
+    git fetch -p
 ```
 
 ### 🔄 Sincronizar fork con upstream
 
-```bash
+
 # Configurar upstream si no existe
 git remote add upstream <URL-del-repositorio-original>
 
@@ -471,12 +472,13 @@ git remote add upstream <URL-del-repositorio-original>
 git fetch upstream
 
 # Rebase de tu main sobre upstream/main
-git checkout main
- git rebase upstream/main
+   
+    git checkout main
+    git rebase upstream/main
 
 # Push de tus cambios a tu fork
-git push origin main
-```
+    git push origin main
+`
 
 ---
 
@@ -488,20 +490,19 @@ Un **Pull Request** es la forma de proponer, discutir y revisar cambios en GitHu
 
 1. **Crear una rama de trabajo**:
 
-   ```bash
-   git checkout -b feature/nombre-funcionalidad
+       git checkout -b feature/nombre-funcionalidad
    ```
 2. **Trabajar y commitear**:
 
-   ```bash
-   git add .
-   git commit -m "Agrega descripción de la funcionalidad"
+   
+       git add .
+       git commit -m "Agrega descripción de la funcionalidad"
    ```
 3. **Enviar la rama al remoto**:
 
-   ```bash
-   git push -u origin feature/nombre-funcionalidad
-   ```
+     
+       git push -u origin feature/nombre-funcionalidad
+   
 4. **Abrir PR** en GitHub:
 
    * Pulsa **New pull request**, elige tu rama y añade título y descripción.
@@ -509,31 +510,31 @@ Un **Pull Request** es la forma de proponer, discutir y revisar cambios en GitHu
 
 ### 🤖 Flujos con GitHub CLI
 
-```bash
+
 # Iniciar sesión
-gh auth login
+    gh auth login
 
 # Crear PR desde la rama actual a main
-gh pr create \
+    gh pr create \
   --title "[Feature] Nombre de la funcionalidad" \
   --body "Descripción detallada de los cambios" \
   --base main --head feature/nombre-funcionalidad
 
 # Listar PR abiertas
-gh pr list
+    gh pr list
 
 # Ver detalles de una PR específica
-gh pr view <número> --web
+    gh pr view <número> --web
 
 # Revisar localmente una PR
-gh pr checkout <número>
+    gh pr checkout <número>
 
 # Aprobar una PR
-gh pr review <número> --approve
+    gh pr review <número> --approve
 
 # Fusionar una PR por CLI
-gh pr merge <número> --merge
-```
+    gh pr merge <número> --merge
+``
 
 ---
 
@@ -541,12 +542,12 @@ gh pr merge <número> --merge
 
 Si no deseas instalar GitHub CLI, puedes abrir la URL directa tras `git push`:
 
-```bash
+
 # Tras git push -u origin feature/nombre-funcionalidad
-git push
+    git push
 # GitHub imprime la URL para crear PR, p.e.:
 # https://github.com/usuario/repositorio/pull/new/feature/nombre-funcionalidad
-```
+`
 
 ---
 
@@ -576,7 +577,8 @@ git push
 Pensado durante un par de segundos
 
 
-````markdown
+``markdown
+
 ## ✨ GITFLOW?
 
 > **Contexto:**
@@ -596,25 +598,24 @@ Pensado durante un par de segundos
 ---
 
 ### 🛠️ Comandos básicos (git-flow AVH)
-```bash
+
 # Inicializar Gitflow en tu proyecto
-git flow init
+    git flow init
 
 # Trabajar con feature
-git flow feature start <nombre>
+    git flow feature start <nombre>
 # terminar feature
-git flow feature finish <nombre>
+    git flow feature finish <nombre>
 
 # Trabajar con release
-git flow release start <version>
-git flow release finish <version>
+    git flow release start <version>
+    git flow release finish <version>
 
 # Trabajar con hotfix
-git flow hotfix start <version>
-git flow hotfix finish <version>
-````
+    git flow hotfix start <version>
+    git flow hotfix finish <version>
+`
 
----
 
 ## 💠 GITHUB FLOW
 
@@ -625,21 +626,21 @@ git flow hotfix finish <version>
 
 ### 📋 Flujo de trabajo
 
-```bash
+
 # 1. Actualiza main
-git checkout main
-git pull origin main
+    git checkout main
+    git pull origin main
 
 # 2. Crea y cambia a tu rama de feature
-git checkout -b feature/<nombre>
+    git checkout -b feature/<nombre>
 
 # 3. Desarrolla y commit
-git add .
-git commit -m "Añade <funcionalidad>"
+    git add .
+    git commit -m "Añade <funcionalidad>"
 
 # 4. Empuja la rama
-git push -u origin feature/<nombre>
-```
+    git push -u origin feature/<nombre>
+`
 
 Luego abres un Pull Request en GitHub y fusionas tras revisión.
 
@@ -652,25 +653,25 @@ Luego abres un Pull Request en GitHub y fusionas tras revisión.
 
 ---
 
-```bash
+
 # SHIP: push directo a main
-git add .
-git commit -m "Ship: corrección rápida"
-git push origin main
+    git add .
+    git commit -m "Ship: corrección rápida"
+    git push origin main
 
 # SHOW: abrir PR con merge casi inmediato
-git checkout -b show/<nombre>
-git add .
-git commit -m "Show: mejora X"
-git push -u origin show/<nombre>
+    git checkout -b show/<nombre>
+    git add .
+    git commit -m "Show: mejora X"
+    git push -u origin show/<nombre>
 # luego Merge en GitHub sin esperar revisión
 
 # ASK: PR tradicional
-git checkout -b ask/<nombre>
-git add .
-git commit -m "Ask: nueva funcionalidad"
-git push -u origin ask/<nombre>
-```
+    git checkout -b ask/<nombre>
+    git add .
+    git commit -m "Ask: nueva funcionalidad"
+    git push -u origin ask/<nombre>
+
 
 ---
 
@@ -681,22 +682,21 @@ git push -u origin ask/<nombre>
 
 ---
 
-```bash
 # Trabaja en main
-git checkout main
+    git checkout main
 
 # Cambia, añade y commitea
-git add .
-git commit -m "Pequeña mejora"
+    git add .
+    git commit -m "Pequeña mejora"
 
 # Push inmediato
-git push origin main
+    git push origin main
 
 # Si es fork, sincroniza con upstream
-git remote add upstream <URL-original>
-git fetch upstream
-git rebase upstream/main
-git push origin main
+    git remote add upstream <URL-original>
+    git fetch upstream
+    git rebase upstream/main
+    git push origin main
 ```
 
 ```
