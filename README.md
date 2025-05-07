@@ -86,50 +86,35 @@ Un **repositorio** es un lugar donde se guarda el código fuente y su historial 
 
 ### ✅ 1. Crear la carpeta del proyecto
 
-```bash
-mkdir miproyecto
-cd miproyecto
+    ```bash
+    mkdir miproyecto
+    cd miproyecto
 ✅ 1. Inicializar Git
-bash
-Copiar
-Editar
-git init
+
+    git init
 ✅ 2. Crear un archivo (ejemplo)
-bash
-Copiar
-Editar
-echo "# Mi proyecto" > README.md
+
+    echo "# Mi proyecto" > README.md
 ✅ 3. Agregar archivo al staging
-bash
-Copiar
-Editar
-git add README.md
+
+    git add README.md
 ✅ 4. Hacer el primer commit
-bash
-Copiar
-Editar
-git commit -m "Primer commit"
+
+    git commit -m "Primer commit"
 ¿Quieres incluir el repositorio en GitHub también? Puedes usar git remote add origin <URL> y luego git push -u origin main.
 
 ❓ ¿Este proyecto tiene commits?
 Un proyecto tiene commits solo si ya ejecutaste:
 
-bash
-Copiar
-Editar
-git commit -m "mensaje"
+
+    git commit -m "mensaje"
 🔹 Si solo hiciste git init y no has hecho ningún commit aún → No tiene commits.
 🔹 Si ya hiciste un commit con mensaje → Sí tiene al menos un commit.
 
 ✅ Para verificar si tu proyecto tiene commits:
 
-bash
-Copiar
-Editar
-git log
-```
 
----
+    git log
 
 ---
 
@@ -139,37 +124,34 @@ A continuación, te muestro paso a paso cómo instalar Git en tu sistema Windows
 
 ---
 
-Descargar Git:
+🔹Descargar Git:
 
-Ve a la página oficial de Git: https://git-scm.com/download/win.
+🔹Ve a la página oficial de Git: https://git-scm.com/download/win.
 
-El archivo de instalación se descargará automáticamente para Windows.
+🔹El archivo de instalación se descargará automáticamente para Windows.
 
-Ejecutar el instalador:
+🔹Ejecutar el instalador:
 
-Abre el archivo descargado (.exe) para iniciar el proceso de instalación.
+🔹Abre el archivo descargado (.exe) para iniciar el proceso de instalación.
 
-En las opciones de instalación, puedes dejar las configuraciones predeterminadas, pero ten en cuenta lo siguiente:
+🔹En las opciones de instalación, puedes dejar las configuraciones predeterminadas, pero ten en cuenta lo siguiente:
 
-Selecciona "Use Git from the Windows Command Prompt" para poder usar Git desde la terminal de Windows.
+🔹Selecciona "Use Git from the Windows Command Prompt" para poder usar Git desde la terminal de Windows.
 
-Git Bash será instalado por defecto, lo que te permitirá usar un terminal similar a Unix.
+🔹Git Bash será instalado por defecto, lo que te permitirá usar un terminal similar a Unix.
 
-Configurar Git (opcional pero recomendado):
+🔹Configurar Git (opcional pero recomendado):
 
-Después de la instalación, abre Git Bash y configura tu nombre y correo electrónico:
+🔹Después de la instalación, abre Git Bash y configura tu nombre y correo electrónico:
 
-bash
-Copiar código
-git config --global user.name "Tu Nombre"
-git config --global user.email "tuemail@example.com"
+    git config --global user.name "Tu Nombre"
+    git config --global user.email "tuemail@example.com"
 Verificar la instalación:
 
 Abre Git Bash o la terminal de Windows y ejecuta:
 
-bash
-Copiar código
-git --version
+   
+    git --version
 Esto debería mostrar la versión de Git instalada.
 
 ¡Listo! Ahora tienes Git instalado y configurado en tu sistema Windows 10.
@@ -184,7 +166,6 @@ Esto debería mostrar la versión de Git instalada.
 ---
 
 ✨ States y commits de Git y GitHub
-<p align="center"> <img src="imagenes/states.png" alt="Estados de Git y GitHub" width="450" height="350"> </p>
 
 ¿Sabías que en Git todo pasa por 3 estados antes de subirlo a GitHub?
 Es como cocinar:
@@ -218,25 +199,21 @@ Hacer un commit es como decir:
 Es súper fácil, solo tienes que seguir estos pasos:
 
 🧩 Pasos para hacer un commit
-bash
-Copiar
-Editar
+
 # 1. Ver qué archivos cambiaron
-git status
+    git status
 
 # 2. Añadir archivos al área de preparación (staging)
-git add archivo.txt
+    git add archivo.txt
 
 # O si quieres agregar todos los archivos modificados:
-git add .
+    git add .
 
 # 3. Hacer el commit con un mensaje
-git commit -m "Explicación corta de lo que hiciste"
+    git commit -m "Explicación corta de lo que hiciste"
 🚀 Subirlo al repositorio remoto (GitHub)
-bash
-Copiar
-Editar
-git push origin main
+
+    git push origin main
 
 ´´´
 🚀 ¿Qué es HEAD y para qué sirve?
@@ -254,28 +231,17 @@ Es el punto de referencia de tu trabajo actual.
 Comandos relacionados con HEAD
 Ver HEAD actual:
 
-bash
-Copiar
-Editar
-git log -1
+    git log -1
 Mover HEAD a un commit específico (deshacer cambios, revisar versiones anteriores):
-
-bash
-Copiar
-Editar
-git checkout <commit-id>
+      
+    git checkout <commit-id>
 Volver a la rama principal (main) después de moverse con HEAD:
 
-bash
-Copiar
-Editar
-git checkout main
+
+    git checkout main
 Mover HEAD a una rama específica:
 
-bash
-Copiar
-Editar
-git checkout <nombre-de-la-rama>
+    git checkout <nombre-de-la-rama>
 
 
 
