@@ -233,10 +233,8 @@ git add .
 # 3. Hacer el commit con un mensaje
 git commit -m "Explicación corta de lo que hiciste"
 🚀 Subirlo al repositorio remoto (GitHub)
-bash
-Copiar
-Editar
-git push origin main
+   ```bash
+   git push origin main
 
 ´´´
 🚀 ¿Qué es HEAD y para qué sirve?
@@ -253,29 +251,18 @@ Es el punto de referencia de tu trabajo actual.
 
 Comandos relacionados con HEAD
 Ver HEAD actual:
-
-bash
-Copiar
-Editar
-git log -1
+  ```bash
+  git log -1
 Mover HEAD a un commit específico (deshacer cambios, revisar versiones anteriores):
-
-bash
-Copiar
-Editar
-git checkout <commit-id>
+   ```bash
+   git checkout <commit-id>
 Volver a la rama principal (main) después de moverse con HEAD:
 
-bash
-Copiar
-Editar
-git checkout main
+   ```bash
+   git checkout main
 Mover HEAD a una rama específica:
-
-bash
-Copiar
-Editar
-git checkout <nombre-de-la-rama>
+   ```bash
+   git checkout <nombre-de-la-rama>
 
 
 
