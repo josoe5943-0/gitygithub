@@ -298,3 +298,121 @@ Cuando dos personas modifican la misma parte de un archivo, Git no sabe cuál ca
     git merge <nombre-de-la-rama>
 4. **Resolver conflictos de merge:**
 Cuando encuentras un conflicto, Git te lo indicará y debes resolverlo manualmente editando el archivo.
+
+
+
+
+## ✨ GIT Y GITHUB SON LO MISMO?
+
+> **Contexto:**
+> Aunque a menudo se usan juntos, **Git** y **GitHub** representan conceptos diferentes en el mundo del control de versiones y la colaboración en proyectos de software.
+
+![Git vs GitHub](imagenes/gitvs.png)
+
+---
+
+### 🗂️ ¿Qué es Git?
+
+Git es un **sistema de control de versiones distribuido**, que permite:
+
+* Registrar el historial completo de cambios en tu proyecto.
+* Crear ramas y fusionarlas para desarrollar funcionalidades aisladas.
+* Deshacer o revisar versiones anteriores cuando sea necesario.
+
+**Comandos básicos de Git:**
+
+```bash
+# Inicializar un repositorio local
+git init
+
+# Ver estado de archivos
+git status
+
+# Añadir cambios al área de preparación
+git add <archivo>  
+# o todos los archivos
+git add .
+
+# Guardar cambios en el historial
+git commit -m "Mensaje descriptivo"
+
+# Crear y cambiar a una nueva rama
+git checkout -b <nombre-de-la-rama>
+
+# Cambiar de rama
+git checkout <rama>
+
+# Fusionar rama a la actual
+git merge <rama>
+```
+
+---
+
+### 🌐 ¿Qué es GitHub?
+
+GitHub es una **plataforma en la nube** que hospeda repositorios Git, ofreciendo:
+
+* Interfaz web para revisar, comentar y gestionar código.
+* Mecanismos de colaboración: *pull requests*, *issues*, *reviews*.
+* Integraciones con CI/CD, proyectos y wikis.
+
+**Comandos para interactuar con GitHub:**
+
+```bash
+# Conectar remoto (solo una vez)
+git remote add origin <URL-del-repositorio>
+
+# Subir rama actual al remoto
+git push origin <rama>
+
+# Obtener cambios del remoto
+git pull origin <rama>
+```
+
+---
+
+## 📦 Repositorios Remotos
+
+Un **repositorio remoto** es la copia de tu proyecto alojada en un servidor (GitHub, GitLab, Bitbucket...). Sirve para:
+
+* Compartir el código con el equipo.
+* Mantener un respaldo seguro y accesible.
+* Colaborar mediante *push* y *pull*.
+
+**Principales comandos remotos:**
+
+```bash
+# Listar remotos configurados
+git remote -v
+
+# Agregar un nuevo remoto
+git remote add <alias> <URL>
+
+# Renombrar un remoto
+git remote rename <alias> <nuevo-alias>
+
+# Eliminar un remoto
+git remote remove <alias>
+```
+
+---
+
+## 🧭 Navegando en GitHub
+
+En GitHub, puedes explorar tu proyecto y el de otros mediante:
+
+* **Repositories:** Lista de proyectos disponibles.
+* **Branches:** Seleccionar distintas ramas desde el menú desplegable.
+* **Pull Requests:** Revisar y aceptar aportes de otros colaboradores.
+* **Issues:** Reportar errores, discutir mejoras y asignar tareas.
+
+**Flujo rápido en la web:**
+
+1. Ir a **Code** > seleccionar rama.
+2. Comprobar **Commits**, **Branches** o **Tags**.
+3. Crear un **Pull request**.
+4. Revisar cambios y **Merge**.
+
+---
+
+
