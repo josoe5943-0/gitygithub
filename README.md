@@ -416,3 +416,192 @@ En GitHub, puedes explorar tu proyecto y el de otros mediante:
 ---
 
 
+## ✨ GIT PUSH Y GIT PULL?
+
+> **Contexto:**
+> Mantener tu repositorio local sincronizado con el remoto es crítico para colaborar eficientemente en equipos. Los comandos **`git push`** y **`git pull`** son la columna vertebral de esta sincronización. A continuación tienes un compendio detallado, con variantes, opciones avanzadas y flujos de Pull Request completos.
+
+![Git Push vs Git Pull](imagenes/gitpu.png)
+
+---
+
+## 📤 git push
+
+El comando **`git push`** envía uno o más refs (ramas, etiquetas) desde tu repositorio local al remoto.
+
+### 🔑 Conceptos clave
+
+* **Upstream vs Origin**: Puedes definir un remoto de seguimiento distinto al predeterminado (`origin`) usando `git remote add upstream <URL>` y luego hacer `git push upstream <rama>`.
+* **Tracking Branches**: Con `git push -u origin <rama>`, estableces la rama local para rastrear la remota, simplificando futuros `git push`.
+
+### 🛠️ Comandos y variantes
+
+```bash
+# Enviar la rama actual al remoto configurado (origin)
+git push origin HEAD
+
+# Establecer upstream y enviar (solo la primera vez)
+git push -u origin <nombre-de-la-rama>
+
+# Enviar todas las ramas al remoto
+git push --all origin
+
+# Enviar etiquetas
+git push --tags origin
+
+# Eliminar una rama remota
+git push origin --delete <nombre-de-la-rama>
+
+# Forzar el push (con precaución)
+git push --force-with-lease origin <rama>
+
+# Espejar todo el repositorio (refs, tags, ramas)
+git push --mirror <URL-remoto>
+```
+
+### ⚠️ Buenas prácticas
+
+* **Evita** usar `--force` sin `--force-with-lease`, para no sobrescribir cambios ajenos por accidente.
+* **Revisa** siempre `git status` y `git log --oneline` antes de empujar.
+
+---
+
+## 📥 git pull
+
+El **`git pull`** combina dos operaciones: `git fetch` (descarga objetos y refs) y `git merge` o `git rebase` (integra los cambios).
+
+### 🔍 ¿Merge o Rebase?
+
+* **Merge** (por defecto): Crea un commit de fusión, preservando el historial de ramas. Útil para mantener el contexto de trabajo.
+* **Rebase**: "Reescribe" tu serie de commits sobre la punta de la rama remota, produciendo un historial lineal. Ideal para limpiar antes de integrar.
+
+### 🛠️ Comandos y variantes
+
+```bash
+# Pull estándar (fetch + merge)
+git pull origin <rama>
+
+# Pull con rebase en lugar de merge
+git pull --rebase origin <rama>
+
+# Solo fetch (sin merge/rebase)
+git fetch origin <rama>
+
+# Fetch de todas las ramas y tags
+git fetch --all --tags
+
+# Fetch y limpiar ramas remotas eliminadas
+git fetch -p
+```
+
+### 🔄 Sincronizar fork con upstream
+
+```bash
+# Configurar upstream si no existe
+git remote add upstream <URL-del-repositorio-original>
+
+# Traer cambios sin fusionar
+git fetch upstream
+
+# Rebase de tu main sobre upstream/main
+git checkout main
+ git rebase upstream/main
+
+# Push de tus cambios a tu fork
+git push origin main
+```
+
+---
+
+## 🔀 Pull Requests (PR)
+
+Un **Pull Request** es la forma de proponer, discutir y revisar cambios en GitHub antes de fusionarlos a la rama principal.
+
+### ✅ Flujo manual en GitHub
+
+1. **Crear una rama de trabajo**:
+
+   ```bash
+   git checkout -b feature/nombre-funcionalidad
+   ```
+2. **Trabajar y commitear**:
+
+   ```bash
+   git add .
+   git commit -m "Agrega descripción de la funcionalidad"
+   ```
+3. **Enviar la rama al remoto**:
+
+   ```bash
+   git push -u origin feature/nombre-funcionalidad
+   ```
+4. **Abrir PR** en GitHub:
+
+   * Pulsa **New pull request**, elige tu rama y añade título y descripción.
+   * Asigna revisores y etiquetas (labels).
+
+### 🤖 Flujos con GitHub CLI
+
+```bash
+# Iniciar sesión
+gh auth login
+
+# Crear PR desde la rama actual a main
+gh pr create \
+  --title "[Feature] Nombre de la funcionalidad" \
+  --body "Descripción detallada de los cambios" \
+  --base main --head feature/nombre-funcionalidad
+
+# Listar PR abiertas
+gh pr list
+
+# Ver detalles de una PR específica
+gh pr view <número> --web
+
+# Revisar localmente una PR
+gh pr checkout <número>
+
+# Aprobar una PR
+gh pr review <número> --approve
+
+# Fusionar una PR por CLI
+gh pr merge <número> --merge
+```
+
+---
+
+## 💡 Hacer una PR desde línea de comandos sin CLI
+
+Si no deseas instalar GitHub CLI, puedes abrir la URL directa tras `git push`:
+
+```bash
+# Tras git push -u origin feature/nombre-funcionalidad
+git push
+# GitHub imprime la URL para crear PR, p.e.:
+# https://github.com/usuario/repositorio/pull/new/feature/nombre-funcionalidad
+```
+
+---
+
+### 📜 Resumen de comandos
+
+| Acción                      | Comando                                          |
+| --------------------------- | ------------------------------------------------ |
+| Iniciar repositorio         | `git init`                                       |
+| Ver estado                  | `git status`                                     |
+| Agregar cambios             | `git add <archivo>` / `git add .`                |
+| Guardar cambios             | `git commit -m "mensaje"`                        |
+| Crear/Cambiar a rama        | `git checkout -b <rama>` / `git checkout <rama>` |
+| Push rama al remoto         | `git push -u origin <rama>`                      |
+| Pull rama del remoto        | `git pull origin <rama>`                         |
+| Fetch sin merge             | `git fetch origin <rama>`                        |
+| Merge rama a la actual      | `git merge <rama>`                               |
+| Rebase rama remota en local | `git pull --rebase origin <rama>`                |
+| Eliminar rama remota        | `git push origin --delete <rama>`                |
+| Push todas las ramas        | `git push --all origin`                          |
+| Push etiquetas              | `git push --tags origin`                         |
+| Pull request manual         | `gh pr create` (CLI) o desde web                 |
+
+---
+
+> Mantén siempre tu repositorio local y remoto sincronizados, respeta los flujos de trabajo de tu equipo y usa variantes avanzadas con precaución. ¡Feliz codificación!
