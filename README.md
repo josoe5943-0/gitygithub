@@ -424,7 +424,7 @@ El comando **`git push`** envía uno o más refs (ramas, etiquetas) desde tu rep
 
 # Espejar todo el repositorio (refs, tags, ramas)
     git push --mirror <URL-remoto>
-```
+
 
 ### ⚠️ Buenas prácticas
 
@@ -460,7 +460,7 @@ El **`git pull`** combina dos operaciones: `git fetch` (descarga objetos y refs)
 
 # Fetch y limpiar ramas remotas eliminadas
     git fetch -p
-```
+
 
 ### 🔄 Sincronizar fork con upstream
 
