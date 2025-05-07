@@ -86,7 +86,7 @@ Un **repositorio** es un lugar donde se guarda el código fuente y su historial 
 
 ### ✅ 1. Crear la carpeta del proyecto
 
-    ```bash
+    
     mkdir miproyecto
     cd miproyecto
 ✅ 1. Inicializar Git
