@@ -24,9 +24,9 @@ Esto permite conocer qué modificaciones se hicieron, quién las realizó y en q
 
 # ¿Por qué es tan importante un control de versiones?
 
-🔹 **Optimización**: Solo se guarda lo esencial, lo que mejora el rendimiento del proyecto.  
-🔹 **Seguridad**: Cada acción queda registrada, garantizando que nada se pierda.  
-🔹 **Flexibilidad**: No es necesario seguir un camino único en el desarrollo; puedes experimentar sin perder el control.  
+🔹 **Optimización**: Solo se guarda lo esencial, lo que mejora el rendimiento del proyecto.
+🔹 **Seguridad**: Cada acción queda registrada, garantizando que nada se pierda.
+🔹 **Flexibilidad**: No es necesario seguir un camino único en el desarrollo; puedes experimentar sin perder el control.
 
 ---
 
@@ -38,10 +38,10 @@ Esto permite conocer qué modificaciones se hicieron, quién las realizó y en q
 
 ---
 
-1990s: Los primeros sistemas de control de versiones fueron creados.  
-2005: **Linus Torvalds** creó Git para gestionar el código del kernel de Linux.  
-2008: Se fundó **GitHub**, una plataforma para alojar proyectos Git en la web.  
-2018: **Microsoft** adquirió **GitHub**.  
+1990s: Los primeros sistemas de control de versiones fueron creados.
+2005: **Linus Torvalds** creó Git para gestionar el código del kernel de Linux.
+2008: Se fundó **GitHub**, una plataforma para alojar proyectos Git en la web.
+2018: **Microsoft** adquirió **GitHub**.
 2024: **Git** y **GitHub** siguen siendo herramientas esenciales para el desarrollo de software, ampliamente utilizadas en la industria.
 
 ---
@@ -86,52 +86,35 @@ Un **repositorio** es un lugar donde se guarda el código fuente y su historial 
 
 ### ✅ 1. Crear la carpeta del proyecto
 
-```bash
-mkdir miproyecto
-cd miproyecto
+
+    mkdir miproyecto
+    cd miproyecto
 ✅ 1. Inicializar Git
-bash
-Copiar
-Editar
-git init
+
+    git init
 ✅ 2. Crear un archivo (ejemplo)
-bash
-Copiar
-Editar
-echo "# Mi proyecto" > README.md
+
+    echo "# Mi proyecto" > README.md
 ✅ 3. Agregar archivo al staging
-bash
-Copiar
-Editar
-git add README.md
+
+    git add README.md
 ✅ 4. Hacer el primer commit
-bash
-Copiar
-Editar
-git commit -m "Primer commit"
+
+    git commit -m "Primer commit"
 ¿Quieres incluir el repositorio en GitHub también? Puedes usar git remote add origin <URL> y luego git push -u origin main.
 
 ❓ ¿Este proyecto tiene commits?
 Un proyecto tiene commits solo si ya ejecutaste:
 
-bash
-Copiar
-Editar
-git commit -m "mensaje"
+
+    git commit -m "mensaje"
 🔹 Si solo hiciste git init y no has hecho ningún commit aún → No tiene commits.
 🔹 Si ya hiciste un commit con mensaje → Sí tiene al menos un commit.
 
 ✅ Para verificar si tu proyecto tiene commits:
 
-bash
-Copiar
-Editar
-git log
-```
 
----
-
----
+    git log
 
 # 💻 INSTALACIÓN DE GIT EN WINDOWS
 
@@ -139,37 +122,35 @@ A continuación, te muestro paso a paso cómo instalar Git en tu sistema Windows
 
 ---
 
-Descargar Git:
+🔹Descargar Git:
 
-Ve a la página oficial de Git: https://git-scm.com/download/win.
+🔹Ve a la página oficial de Git: https://git-scm.com/download/win.
 
-El archivo de instalación se descargará automáticamente para Windows.
+🔹El archivo de instalación se descargará automáticamente para Windows.
 
-Ejecutar el instalador:
+🔹Ejecutar el instalador:
 
-Abre el archivo descargado (.exe) para iniciar el proceso de instalación.
+🔹Abre el archivo descargado (.exe) para iniciar el proceso de instalación.
 
-En las opciones de instalación, puedes dejar las configuraciones predeterminadas, pero ten en cuenta lo siguiente:
+🔹En las opciones de instalación, puedes dejar las configuraciones predeterminadas, pero ten en cuenta lo siguiente:
 
-Selecciona "Use Git from the Windows Command Prompt" para poder usar Git desde la terminal de Windows.
+🔹Selecciona "Use Git from the Windows Command Prompt" para poder usar Git desde la terminal de Windows.
 
-Git Bash será instalado por defecto, lo que te permitirá usar un terminal similar a Unix.
+🔹Git Bash será instalado por defecto, lo que te permitirá usar un terminal similar a Unix.
 
-Configurar Git (opcional pero recomendado):
+🔹Configurar Git (opcional pero recomendado):
 
-Después de la instalación, abre Git Bash y configura tu nombre y correo electrónico:
+🔹Después de la instalación, abre Git Bash y configura tu nombre y correo electrónico:
 
-bash
-Copiar código
-git config --global user.name "Tu Nombre"
-git config --global user.email "tuemail@example.com"
+
+    git config --global user.name "Tu Nombre"
+    git config --global user.email "tuemail@example.com"
 Verificar la instalación:
 
 Abre Git Bash o la terminal de Windows y ejecuta:
 
-bash
-Copiar código
-git --version
+
+    git --version
 Esto debería mostrar la versión de Git instalada.
 
 ¡Listo! Ahora tienes Git instalado y configurado en tu sistema Windows 10.
@@ -184,7 +165,6 @@ Esto debería mostrar la versión de Git instalada.
 ---
 
 ✨ States y commits de Git y GitHub
-<p align="center"> <img src="imagenes/states.png" alt="Estados de Git y GitHub" width="450" height="350"> </p>
 
 ¿Sabías que en Git todo pasa por 3 estados antes de subirlo a GitHub?
 Es como cocinar:
@@ -218,26 +198,25 @@ Hacer un commit es como decir:
 Es súper fácil, solo tienes que seguir estos pasos:
 
 🧩 Pasos para hacer un commit
-bash
-Copiar
-Editar
+
 # 1. Ver qué archivos cambiaron
-git status
+    git status
 
 # 2. Añadir archivos al área de preparación (staging)
-git add archivo.txt
+    git add archivo.txt
 
 # O si quieres agregar todos los archivos modificados:
-git add .
+    git add .
 
 # 3. Hacer el commit con un mensaje
-git commit -m "Explicación corta de lo que hiciste"
+    git commit -m "Explicación corta de lo que hiciste"
 🚀 Subirlo al repositorio remoto (GitHub)
-   ```bash
-   git push origin main
+
+    git push origin main
 
 ´´´
-🚀 ¿Qué es HEAD y para qué sirve?
+# 💻 ¿Que es HEAD y para que sirve?
+
 <p align="center"> <img src="imagenes/head.png" alt="HEAD en Git" width="450" height="350"> </p>
 HEAD es como el apuntador de tu proyecto. Te muestra en qué parte de la historia de tu código te encuentras.
 Cuando usas HEAD, estás viendo la última versión registrada en tu repositorio. Es esencial para saber en qué punto estás y para cambiar entre ramas o versiones de tu proyecto.
@@ -251,18 +230,17 @@ Es el punto de referencia de tu trabajo actual.
 
 Comandos relacionados con HEAD
 Ver HEAD actual:
-  ```bash
-  git log -1
+
+    git log -1
 Mover HEAD a un commit específico (deshacer cambios, revisar versiones anteriores):
-   ```bash
-   git checkout <commit-id>
+
+    git checkout <commit-id>
 Volver a la rama principal (main) después de moverse con HEAD:
 
-   ```bash
-   git checkout main
+    git checkout main
 Mover HEAD a una rama específica:
-   ```bash
-   git checkout <nombre-de-la-rama>
+
+    git checkout <nombre-de-la-rama>
 
 
 
@@ -274,7 +252,7 @@ Mover HEAD a una rama específica:
 
 ### 🔹 ¿Qué son las ramas en Git?
 
-Las ramas en Git son como diferentes versiones del proyecto que permiten trabajar en distintas funcionalidades sin afectar el código principal. 
+Las ramas en Git son como diferentes versiones del proyecto que permiten trabajar en distintas funcionalidades sin afectar el código principal.
 
 ### 🔹 ¿Qué es un Merge?
 
@@ -321,32 +299,30 @@ Git es un **sistema de control de versiones distribuido**, que permite:
 
 **Comandos básicos de Git:**
 
-```bash
+
 # Inicializar un repositorio local
-git init
+    git init
 
 # Ver estado de archivos
-git status
+    git status
 
 # Añadir cambios al área de preparación
-git add <archivo>  
+    git add <archivo>
 # o todos los archivos
-git add .
+    git add .
 
 # Guardar cambios en el historial
-git commit -m "Mensaje descriptivo"
+    git commit -m "Mensaje descriptivo"
 
 # Crear y cambiar a una nueva rama
-git checkout -b <nombre-de-la-rama>
+    git checkout -b <nombre-de-la-rama>
 
 # Cambiar de rama
-git checkout <rama>
+    git checkout <rama>
 
 # Fusionar rama a la actual
-git merge <rama>
-```
-
----
+    git merge <rama>
+`
 
 ### 🌐 ¿Qué es GitHub?
 
@@ -358,18 +334,15 @@ GitHub es una **plataforma en la nube** que hospeda repositorios Git, ofreciendo
 
 **Comandos para interactuar con GitHub:**
 
-```bash
 # Conectar remoto (solo una vez)
-git remote add origin <URL-del-repositorio>
+    git remote add origin <URL-del-repositorio>
 
 # Subir rama actual al remoto
-git push origin <rama>
+    git push origin <rama>
 
 # Obtener cambios del remoto
-git pull origin <rama>
-```
+    git pull origin <rama>
 
----
 
 ## 📦 Repositorios Remotos
 
@@ -381,22 +354,18 @@ Un **repositorio remoto** es la copia de tu proyecto alojada en un servidor (Git
 
 **Principales comandos remotos:**
 
-```bash
+
 # Listar remotos configurados
-git remote -v
+    git remote -v
 
 # Agregar un nuevo remoto
-git remote add <alias> <URL>
+    git remote add <alias> <URL>
 
 # Renombrar un remoto
-git remote rename <alias> <nuevo-alias>
+    git remote rename <alias> <nuevo-alias>
 
 # Eliminar un remoto
-git remote remove <alias>
-```
-
----
-
+    git remote remove <alias>
 ## 🧭 Navegando en GitHub
 
 En GitHub, puedes explorar tu proyecto y el de otros mediante:
@@ -414,14 +383,12 @@ En GitHub, puedes explorar tu proyecto y el de otros mediante:
 4. Revisar cambios y **Merge**.
 
 ---
-
-
 ## ✨ GIT PUSH Y GIT PULL?
 
 > **Contexto:**
 > Mantener tu repositorio local sincronizado con el remoto es crítico para colaborar eficientemente en equipos. Los comandos **`git push`** y **`git pull`** son la columna vertebral de esta sincronización. A continuación tienes un compendio detallado, con variantes, opciones avanzadas y flujos de Pull Request completos.
 
-![Git Push vs Git Pull](imagenes/gitpu.png)
+<p align="center"> <img src="imagenes/gitpu.png" alt="" width="450" height="350"> </p>
 
 ---
 
@@ -605,29 +572,30 @@ git push
 ---
 
 > Mantén siempre tu repositorio local y remoto sincronizados, respeta los flujos de trabajo de tu equipo y usa variantes avanzadas con precaución. ¡Feliz codificación!
+
 Pensado durante un par de segundos
 
 
 ````markdown
 ## ✨ GITFLOW?
 
-> **Contexto:**  
+> **Contexto:**
 > Gitflow, diseñado por Vincent Driessen en 2010, es un modelo de branching que organiza el desarrollo en ramas bien definidas para features, releases y hotfixes.
 
 ![Gitflow Workflow](imagenes/gitflow.png)
 
 ---
 
-### 🗂️ Principales ramas en Gitflow  
-- `main` (o `master`): Código de producción estable.  
-- `develop`: Integración continua de nuevas funcionalidades.  
-- `feature/<nombre>`: Cada nueva funcionalidad, partiendo de `develop`.  
-- `release/<versión>`: Preparación de la siguiente versión, partiendo de `develop`.  
-- `hotfix/<versión>`: Corrección urgente, partiendo de `main`, fusionada luego en `develop` y `main`.  
+### 🗂️ Principales ramas en Gitflow
+- `main` (o `master`): Código de producción estable.
+- `develop`: Integración continua de nuevas funcionalidades.
+- `feature/<nombre>`: Cada nueva funcionalidad, partiendo de `develop`.
+- `release/<versión>`: Preparación de la siguiente versión, partiendo de `develop`.
+- `hotfix/<versión>`: Corrección urgente, partiendo de `main`, fusionada luego en `develop` y `main`.
 
 ---
 
-### 🛠️ Comandos básicos (git-flow AVH)  
+### 🛠️ Comandos básicos (git-flow AVH)
 ```bash
 # Inicializar Gitflow en tu proyecto
 git flow init
@@ -733,3 +701,5 @@ git push origin main
 
 ```
 ```
+
+
