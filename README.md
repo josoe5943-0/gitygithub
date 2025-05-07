@@ -605,3 +605,131 @@ git push
 ---
 
 > Mantén siempre tu repositorio local y remoto sincronizados, respeta los flujos de trabajo de tu equipo y usa variantes avanzadas con precaución. ¡Feliz codificación!
+Pensado durante un par de segundos
+
+
+````markdown
+## ✨ GITFLOW?
+
+> **Contexto:**  
+> Gitflow, diseñado por Vincent Driessen en 2010, es un modelo de branching que organiza el desarrollo en ramas bien definidas para features, releases y hotfixes.
+
+![Gitflow Workflow](imagenes/gitflow.png)
+
+---
+
+### 🗂️ Principales ramas en Gitflow  
+- `main` (o `master`): Código de producción estable.  
+- `develop`: Integración continua de nuevas funcionalidades.  
+- `feature/<nombre>`: Cada nueva funcionalidad, partiendo de `develop`.  
+- `release/<versión>`: Preparación de la siguiente versión, partiendo de `develop`.  
+- `hotfix/<versión>`: Corrección urgente, partiendo de `main`, fusionada luego en `develop` y `main`.  
+
+---
+
+### 🛠️ Comandos básicos (git-flow AVH)  
+```bash
+# Inicializar Gitflow en tu proyecto
+git flow init
+
+# Trabajar con feature
+git flow feature start <nombre>
+# terminar feature
+git flow feature finish <nombre>
+
+# Trabajar con release
+git flow release start <version>
+git flow release finish <version>
+
+# Trabajar con hotfix
+git flow hotfix start <version>
+git flow hotfix finish <version>
+````
+
+---
+
+## 💠 GITHUB FLOW
+
+> **Contexto:**
+> GitHub Flow es ligero y orientado a despliegues continuos: una única rama `main` y ramas efímeras para features.
+
+---
+
+### 📋 Flujo de trabajo
+
+```bash
+# 1. Actualiza main
+git checkout main
+git pull origin main
+
+# 2. Crea y cambia a tu rama de feature
+git checkout -b feature/<nombre>
+
+# 3. Desarrolla y commit
+git add .
+git commit -m "Añade <funcionalidad>"
+
+# 4. Empuja la rama
+git push -u origin feature/<nombre>
+```
+
+Luego abres un Pull Request en GitHub y fusionas tras revisión.
+
+---
+
+## 🚢 SHIP / SHOW / ASK
+
+> **Contexto:**
+> Este modelo clasifica según urgencia y revisión: envío directo, aviso previo o PR completo.
+
+---
+
+```bash
+# SHIP: push directo a main
+git add .
+git commit -m "Ship: corrección rápida"
+git push origin main
+
+# SHOW: abrir PR con merge casi inmediato
+git checkout -b show/<nombre>
+git add .
+git commit -m "Show: mejora X"
+git push -u origin show/<nombre>
+# luego Merge en GitHub sin esperar revisión
+
+# ASK: PR tradicional
+git checkout -b ask/<nombre>
+git add .
+git commit -m "Ask: nueva funcionalidad"
+git push -u origin ask/<nombre>
+```
+
+---
+
+## 🌲 TRUNK BASED DEVELOPMENT
+
+> **Contexto:**
+> Todos commitean frecuentemente a una única rama (`main`), con ramas muy cortas y CI/CD continuo.
+
+---
+
+```bash
+# Trabaja en main
+git checkout main
+
+# Cambia, añade y commitea
+git add .
+git commit -m "Pequeña mejora"
+
+# Push inmediato
+git push origin main
+
+# Si es fork, sincroniza con upstream
+git remote add upstream <URL-original>
+git fetch upstream
+git rebase upstream/main
+git push origin main
+```
+
+```
+```
