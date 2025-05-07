@@ -86,7 +86,7 @@ Un **repositorio** es un lugar donde se guarda el código fuente y su historial 
 
 ### ✅ 1. Crear la carpeta del proyecto
 
-    ```bash
+    
     mkdir miproyecto
     cd miproyecto
 ✅ 1. Inicializar Git
@@ -111,10 +111,8 @@ Un proyecto tiene commits solo si ya ejecutaste:
 🔹 Si ya hiciste un commit con mensaje → Sí tiene al menos un commit.
 
 ✅ Para verificar si tu proyecto tiene commits:
-```bash
+
      git log
-     
-```
 
 
 ---
@@ -125,32 +123,32 @@ A continuación, te muestro paso a paso cómo instalar Git en tu sistema Windows
 
 ---
 
-Descargar Git:
+🔹Descargar Git:
 
-Ve a la página oficial de Git: https://git-scm.com/download/win.
+🔹Ve a la página oficial de Git: https://git-scm.com/download/win.
 
-El archivo de instalación se descargará automáticamente para Windows.
+🔹El archivo de instalación se descargará automáticamente para Windows.
 
-Ejecutar el instalador:
+🔹Ejecutar el instalador:
 
-Abre el archivo descargado (.exe) para iniciar el proceso de instalación.
+🔹Abre el archivo descargado (.exe) para iniciar el proceso de instalación.
 
-En las opciones de instalación, puedes dejar las configuraciones predeterminadas, pero ten en cuenta lo siguiente:
+🔹En las opciones de instalación, puedes dejar las configuraciones predeterminadas, pero ten en cuenta lo siguiente:
 
-Selecciona "Use Git from the Windows Command Prompt" para poder usar Git desde la terminal de Windows.
+🔹Selecciona "Use Git from the Windows Command Prompt" para poder usar Git desde la terminal de Windows.
 
-Git Bash será instalado por defecto, lo que te permitirá usar un terminal similar a Unix.
+🔹Git Bash será instalado por defecto, lo que te permitirá usar un terminal similar a Unix.
 
-Configurar Git (opcional pero recomendado):
+🔹Configurar Git (opcional pero recomendado):
 
-Después de la instalación, abre Git Bash y configura tu nombre y correo electrónico:
+🔹Después de la instalación, abre Git Bash y configura tu nombre y correo electrónico:
 
 
       git config --global user.name "Tu Nombre"
       git config --global user.email "tuemail@example.com"
-Verificar la instalación:
+🔹Verificar la instalación:
 
-Abre Git Bash o la terminal de Windows y ejecuta:
+🔹Abre Git Bash o la terminal de Windows y ejecuta:
 
 
     git --version
@@ -202,9 +200,7 @@ Hacer un commit es como decir:
 Es súper fácil, solo tienes que seguir estos pasos:
 
 🧩 Pasos para hacer un commit
-bash
-Copiar
-Editar
+
 # 1. Ver qué archivos cambiaron
     
     git status
@@ -240,11 +236,11 @@ Es el punto de referencia de tu trabajo actual.
 Comandos relacionados con HEAD
 Ver HEAD actual:
 
-    ```bash
+    
     git log -1
 Mover HEAD a un commit específico (deshacer cambios, revisar versiones anteriores):
       
-    ```bash
+    
     git checkout <commit-id>
 Volver a la rama principal (main) después de moverse con HEAD:
 
@@ -276,14 +272,15 @@ Cuando dos personas modifican la misma parte de un archivo, Git no sabe cuál ca
 ### 🚀 Comandos para trabajar con ramas y merge
 
 1. **Crear una rama:**
-   ```bash
-   git branch <nombre-de-la-rama>
 
-2. **Cambiarse a una rama:**
+     ```bash
+    git branch <nombre-de-la-rama>
+
+3. **Cambiarse a una rama:**
     ```bash
     git checkout <nombre-de-la-rama>
-3. **Fusionar una rama con la rama principal (main):**
+4. **Fusionar una rama con la rama principal (main):**
     ```bash
     git merge <nombre-de-la-rama>
-4. **Resolver conflictos de merge:**
+5. **Resolver conflictos de merge:**
 Cuando encuentras un conflicto, Git te lo indicará y debes resolverlo manualmente editando el archivo.
