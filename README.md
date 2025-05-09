@@ -657,7 +657,7 @@ Si no deseas instalar GitHub CLI, puedes abrir la URL directa tras `git push`:
 
 # 4. Empuja la rama
     git push -u origin feature/<nombre>
-`
+
 
 Luego abres un Pull Request en GitHub y fusionas tras revisión.
 
