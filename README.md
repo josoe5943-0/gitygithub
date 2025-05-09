@@ -719,4 +719,15 @@ Luego abres un Pull Request en GitHub y fusionas tras revisión.
     git rebase upstream/main
     git push origin main
 
+## 💬 Agradecimiento
+
+Gracias por tomarte el tiempo de ver mi proyecto. Este repositorio fue creado como una introducción práctica a GitHub, con el objetivo de aprender y compartir conocimientos básicos sobre control de versiones.
+
+¡Se agradecen sugerencias, estrellas ⭐ o cualquier feedback!
+
+Atentamente,
+## Mr. Fer
+
+
+
 
