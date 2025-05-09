@@ -725,6 +725,12 @@ Gracias por tomarte el tiempo de ver mi proyecto. Este repositorio fue creado co
 
 ¡Se agradecen sugerencias, estrellas ⭐ o cualquier feedback!
 
+## Un pequeño chiste antes 
+<p align="center">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRna61Dw_Kb5BEGm2h7PvSXzFnd8925TNAvhQ&s" width="750" height="500" alt="Imagen de agradecimiento">
+</p>
+
+
 Atentamente,
 ## Mr. Fer
 
