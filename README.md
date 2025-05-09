@@ -600,7 +600,7 @@ Pensado durante un par de segundos
 
 ## ✨ GITFLOW?
 <p align="center">
-  <img src="imagenes2/gitfo.png" alt="Introducción Git" width="400" height="250">
+  <img src="imagenes2/gitfo.png" alt="Introducción Git" width="750" height="500">
 </p>
 
 
