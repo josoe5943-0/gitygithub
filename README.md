@@ -335,7 +335,7 @@ Git es un **sistema de control de versiones distribuido**, que permite:
 
 # Fusionar rama a la actual
     git merge <rama>
-`
+
 
 ### 🌐 ¿Qué es GitHub?
 <p align="center">
