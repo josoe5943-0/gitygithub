@@ -589,8 +589,6 @@ Si no deseas instalar GitHub CLI, puedes abrir la URL directa tras `git push`:
 
 > Mantén siempre tu repositorio local y remoto sincronizados, respeta los flujos de trabajo de tu equipo y usa variantes avanzadas con precaución. ¡Feliz codificación!
 
-Pensado durante un par de segundos
-
 
 ``markdown
 
