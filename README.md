@@ -68,7 +68,8 @@ Esto permite conocer qué modificaciones se hicieron, quién las realizó y en q
 
 # ¿Qué es un repositorio?
 
-Un **repositorio** es un lugar donde se guarda el código fuente y su historial de cambios. Puede estar en tu máquina local o en una plataforma en línea como **GitHub**, permitiendo colaborar y gestionar proyectos de software.
+Un **repositorio** es un lugar donde se guarda el código fuente y su historial de cambios.
+Puede estar en tu máquina local o en una plataforma en línea como **GitHub**, permitiendo colaborar y gestionar proyectos de software.
 
 ---
 
@@ -105,7 +106,13 @@ Un **repositorio** es un lugar donde se guarda el código fuente y su historial 
 ✅ 4. Hacer el primer commit
 
     git commit -m "Primer commit"
-¿Quieres incluir el repositorio en GitHub también? Puedes usar git remote add origin <URL> y luego git push -u origin main.
+¿Quieres incluir el repositorio en GitHub también? 
+Puedes usar: 
+
+    git remote add origin <URL> 
+y luego 
+ 
+    git push -u origin main.
 
 ❓ ¿Este proyecto tiene commits?
 Un proyecto tiene commits solo si ya ejecutaste:
@@ -234,7 +241,7 @@ Se mueve automáticamente cuando haces un commit.
 🔹Es el punto de referencia de tu trabajo actual.
 
 🔹Comandos relacionados con HEAD
-Ver HEAD actual:
+  Ver HEAD actual:
 
     git log -1
 🔹Mover HEAD a un commit específico (deshacer cambios, revisar versiones anteriores):
