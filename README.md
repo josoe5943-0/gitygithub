@@ -572,8 +572,9 @@ Si no deseas instalar GitHub CLI, puedes abrir la URL directa tras `git push`:
 # Tras git push -u origin feature/nombre-funcionalidad
     git push
 # GitHub imprime la URL para crear PR, p.e.:
-# https://github.com/usuario/repositorio/pull/new/feature/nombre-funcionalidad
-`
+ 
+    https://github.com/usuario/repositorio/pull/new/feature/nombre-funcionalidad
+
 
 ---
 
