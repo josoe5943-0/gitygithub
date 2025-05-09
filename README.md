@@ -218,27 +218,28 @@ Es súper fácil, solo tienes que seguir estos pasos:
 # 💻 ¿Que es HEAD y para que sirve?
 
 <p align="center"> <img src="imagenes/head.png" alt="HEAD en Git" width="750" height="500"> </p>
-HEAD es como el apuntador de tu proyecto. Te muestra en qué parte de la historia de tu código te encuentras.
+
+🔹HEAD es como el apuntador de tu proyecto. Te muestra en qué parte de la historia de tu código te encuentras.
 Cuando usas HEAD, estás viendo la última versión registrada en tu repositorio. Es esencial para saber en qué punto estás y para cambiar entre ramas o versiones de tu proyecto.
 
 ¿Qué hace HEAD?
 Se mueve automáticamente cuando haces un commit.
 
-Te ayuda a navegar entre distintas versiones del proyecto.
+🔹Te ayuda a navegar entre distintas versiones del proyecto.
 
-Es el punto de referencia de tu trabajo actual.
+🔹Es el punto de referencia de tu trabajo actual.
 
-Comandos relacionados con HEAD
+🔹Comandos relacionados con HEAD
 Ver HEAD actual:
 
     git log -1
-Mover HEAD a un commit específico (deshacer cambios, revisar versiones anteriores):
+🔹Mover HEAD a un commit específico (deshacer cambios, revisar versiones anteriores):
 
     git checkout <commit-id>
-Volver a la rama principal (main) después de moverse con HEAD:
+🔹Volver a la rama principal (main) después de moverse con HEAD:
 
     git checkout main
-Mover HEAD a una rama específica:
+🔹Mover HEAD a una rama específica:
 
     git checkout <nombre-de-la-rama>
 
@@ -287,8 +288,6 @@ Cuando encuentras un conflicto, Git te lo indicará y debes resolverlo manualmen
 
 > **Contexto:**
 > Aunque a menudo se usan juntos, **Git** y **GitHub** representan conceptos diferentes en el mundo del control de versiones y la colaboración en proyectos de software.
-
-![Git vs GitHub](imagenes/gitvs.png)
 
 ---
 
@@ -723,9 +722,5 @@ Luego abres un Pull Request en GitHub y fusionas tras revisión.
     git fetch upstream
     git rebase upstream/main
     git push origin main
-```
-
-```
-```
 
 
