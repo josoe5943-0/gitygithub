@@ -5,7 +5,7 @@ Bienvenido a mi resumen personal del curso de **Git y GitHub**.
 ---
 
 <p align="center">
-  <img src="imagenes/introgit.png" alt="Introducción Git" width="400" height="250">
+  <img src="imagenes/introgit.png" alt="Introducción Git" width="750" height="500">
 </p>
 
 # ¿Qué es un control de versiones?
@@ -15,7 +15,7 @@ El control de versiones es una herramienta que guarda el historial de todos los 
 ---
 
 <p align="center">
-  <img src="imagenes/control.png" alt="Control de versiones" width="450" height="250">
+  <img src="imagenes/control.png" alt="Control de versiones" width="750" height="500">
 </p>
 
 ---
@@ -31,7 +31,7 @@ Esto permite conocer qué modificaciones se hicieron, quién las realizó y en q
 ---
 
 <p align="center">
-  <img src="imagenes/importa.png" alt="Importancia del control de versiones" width="450" height="250">
+  <img src="imagenes/importa.png" alt="Importancia del control de versiones" width="750" height="500">
 </p>
 
 # Historia de GIT Y GITHUB
@@ -47,7 +47,7 @@ Esto permite conocer qué modificaciones se hicieron, quién las realizó y en q
 ---
 
 <p align="center">
-  <img src="imagenes/history.png" alt="Historia de Git y GitHub" width="450" height="250">
+  <img src="imagenes/history.png" alt="Historia de Git y GitHub" width="750" height="500">
 </p>
 
 # ¿Qué es GIT y GITHUB?
@@ -59,7 +59,7 @@ Esto permite conocer qué modificaciones se hicieron, quién las realizó y en q
 ---
 
 <p align="center">
-  <img src="imagenes/git.png" alt="Git y GitHub" width="450" height="350">
+  <img src="imagenes/git.png" alt="Git y GitHub" width="750" height="500">
 </p>
 
 # ¿Qué es un repositorio?
@@ -69,7 +69,7 @@ Un **repositorio** es un lugar donde se guarda el código fuente y su historial 
 ---
 
 <p align="center">
-  <img src="imagenes/reposi.png" alt="Repositorio" width="450" height="350">
+  <img src="imagenes/reposi.png" alt="Repositorio" width="750" height="500">
 </p>
 
 # 🚀 INICIEMOS UN NUEVO PROYECTO GIT
@@ -79,7 +79,7 @@ Un **repositorio** es un lugar donde se guarda el código fuente y su historial 
 ---
 
 <p align="center">
-  <img src="imagenes/inicio.png" alt="Iniciar proyecto Git" width="450" height="350">
+  <img src="imagenes/inicio.png" alt="Iniciar proyecto Git" width="750" height="500">
 </p>
 
 ---
@@ -159,7 +159,7 @@ Esto debería mostrar la versión de Git instalada.
 
 <p align="center">
   <strong>Instalación de Git y GitHub en Windows</strong><br>
-  <img src="imagenes/github.png" alt="Instalación de Git y GitHub en Windows" width="450" height="350">
+  <img src="imagenes/github.png" alt="Instalación de Git y GitHub en Windows" width="750" height="500">
 </p>
 
 ---
@@ -170,7 +170,7 @@ Esto debería mostrar la versión de Git instalada.
 Es como cocinar:
 Working Directory: estás cocinando, todo es un desastre pero vas viendo
 🧠 States y commits de Git y GitHub
-<p align="center"> <img src="imagenes/states.png" alt="Estados de Git y GitHub" width="450" height="350"> </p>
+<p align="center"> <img src="imagenes/states.png" alt="Estados de Git y GitHub" width="750" height="500"> </p>
 🤔 ¿Y eso de los estados qué onda?
 Antes de subir algo a GitHub, Git lo pasa por tres estados básicos, que se sienten más o menos así:
 
@@ -182,7 +182,7 @@ Antes de subir algo a GitHub, Git lo pasa por tres estados básicos, que se sien
 
 
 📝 Un commit, ¿qué es?
-<p align="center"> <img src="imagenes/commit.png" alt="¿Qué es un commit?" width="450" height="350"> </p>
+<p align="center"> <img src="imagenes/commit.png" alt="¿Qué es un commit?" width="750" height="500"> </p>
 💡 ¿Qué es un commit?
 Un commit es como dejar una nota con la foto del momento de tu proyecto.
 Dice: “esto fue lo que hice” y queda guardado para siempre.
@@ -217,7 +217,7 @@ Es súper fácil, solo tienes que seguir estos pasos:
 ´´´
 # 💻 ¿Que es HEAD y para que sirve?
 
-<p align="center"> <img src="imagenes/head.png" alt="HEAD en Git" width="450" height="350"> </p>
+<p align="center"> <img src="imagenes/head.png" alt="HEAD en Git" width="750" height="500"> </p>
 HEAD es como el apuntador de tu proyecto. Te muestra en qué parte de la historia de tu código te encuentras.
 Cuando usas HEAD, estás viendo la última versión registrada en tu repositorio. Es esencial para saber en qué punto estás y para cambiar entre ramas o versiones de tu proyecto.
 
@@ -247,7 +247,7 @@ Mover HEAD a una rama específica:
 # Qué son ramas, merge y cuáles son sus conflictos
 
 <p align="center">
-  <img src="imagenes/ramas.png" alt="Ramas en Git" width="450" height="350">
+  <img src="imagenes/ramas.png" alt="Ramas en Git" width="750" height="500">
 </p>
 
 ### 🔹 ¿Qué son las ramas en Git?
@@ -282,7 +282,7 @@ Cuando encuentras un conflicto, Git te lo indicará y debes resolverlo manualmen
 
 ## ✨ GIT Y GITHUB SON LO MISMO?
 <p align="center">
-  <img src="imagenes2/gitgit2.png" alt="git" width="400" height="250">
+  <img src="imagenes2/gitgit2.png" alt="git" width="750" height="500">
 </p>
 
 > **Contexto:**
@@ -329,7 +329,7 @@ Git es un **sistema de control de versiones distribuido**, que permite:
 
 ### 🌐 ¿Qué es GitHub?
 <p align="center">
-  <img src="imagenes2/gith.png" alt="git" width="400" height="250">
+  <img src="imagenes2/gith.png" alt="git" width="750" height="500">
 </p>
 
 GitHub es una **plataforma en la nube** que hospeda repositorios Git, ofreciendo:
@@ -352,7 +352,7 @@ GitHub es una **plataforma en la nube** que hospeda repositorios Git, ofreciendo
 
 ## 📦 Repositorios Remotos
 <p align="center">
-  <img src="imagenes2/repos.png" alt="Introducción Git" width="400" height="250">
+  <img src="imagenes2/repos.png" alt="Introducción Git" width="750" height="500">
 </p>
 
 Un **repositorio remoto** es la copia de tu proyecto alojada en un servidor (GitHub, GitLab, Bitbucket...). Sirve para:
@@ -377,7 +377,7 @@ Un **repositorio remoto** es la copia de tu proyecto alojada en un servidor (Git
     git remote remove <alias>
 ## 🧭 Navegando en GitHub
 <p align="center">
-  <img src="imagenes2/nave.png" alt="Introducción Git" width="400" height="250">
+  <img src="imagenes2/nave.png" alt="Introducción Git" width="750" height="400">
 </p>
 
 En GitHub, puedes explorar tu proyecto y el de otros mediante:
@@ -397,14 +397,14 @@ En GitHub, puedes explorar tu proyecto y el de otros mediante:
 ---
 ## ✨ GIT PUSH Y GIT PULL?
 <p align="center">
-  <img src="imagenes2/push.png" alt="Introducción Git" width="400" height="250">
+  <img src="imagenes2/push.png" alt="Introducción Git" width="750" height="500">
 </p>
 
 
 > **Contexto:**
 > Mantener tu repositorio local sincronizado con el remoto es crítico para colaborar eficientemente en equipos. Los comandos **`git push`** y **`git pull`** son la columna vertebral de esta sincronización. A continuación tienes un compendio detallado, con variantes, opciones avanzadas y flujos de Pull Request completos.
 
-<p align="center"> <img src="imagenes/gitpu.png" alt="" width="450" height="350"> </p>
+<p align="center"> <img src="imagenes/gitpu.png" alt="" width="750" height="500"> </p>
 
 ---
 
@@ -500,7 +500,7 @@ git fetch upstream
 
 ## 🔀 Pull Requests (PR)
 <p align="center">
-  <img src="imagenes2/push.png" alt="Introducción Git" width="400" height="250">
+  <img src="imagenes2/push.png" alt="Introducción Git" width="750" height="500">
 </p>
 
 
@@ -700,6 +700,8 @@ Luego abres un Pull Request en GitHub y fusionas tras revisión.
 ---
 
 ## 🌲 TRUNK BASED DEVELOPMENT
+
+<img src="https://images.prismic.io/launchdarkly/5845bb0c-59bc-48ae-b43e-0f3c17c5b5f7_trunk+based+dev+feature+flags.png?auto=compress,format" alt="Descripción" width="7500" height="500">
 
 > **Contexto:**
 > Todos commitean frecuentemente a una única rama (`main`), con ramas muy cortas y CI/CD continuo.
