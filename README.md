@@ -474,13 +474,13 @@ El **`git pull`** combina dos operaciones: `git fetch` (descarga objetos y refs)
 
 
 ### 🔄 Sincronizar fork con upstream
-
+        
 
 # Configurar upstream si no existe
-git remote add upstream <URL-del-repositorio-original>
+    git remote add upstream <URL-del-repositorio-original>
 
 # Traer cambios sin fusionar
-git fetch upstream
+    git fetch upstream
 
 # Rebase de tu main sobre upstream/main
    
@@ -489,7 +489,7 @@ git fetch upstream
 
 # Push de tus cambios a tu fork
     git push origin main
-`
+
 
 ---
 
