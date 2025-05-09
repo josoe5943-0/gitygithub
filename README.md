@@ -403,10 +403,6 @@ En GitHub, puedes explorar tu proyecto y el de otros mediante:
 > **Contexto:**
 > Mantener tu repositorio local sincronizado con el remoto es crítico para colaborar eficientemente en equipos. Los comandos **`git push`** y **`git pull`** son la columna vertebral de esta sincronización. A continuación tienes un compendio detallado, con variantes, opciones avanzadas y flujos de Pull Request completos.
 
-<p align="center"> <img src="imagenes/gitpu.png" alt="" width="750" height="500"> </p>
-
----
-
 ## 📤 git push
 
 El comando **`git push`** envía uno o más refs (ramas, etiquetas) desde tu repositorio local al remoto.
