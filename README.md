@@ -25,7 +25,11 @@ Esto permite conocer qué modificaciones se hicieron, quién las realizó y en q
 # ¿Por qué es tan importante un control de versiones?
 
 🔹 **Optimización**: Solo se guarda lo esencial, lo que mejora el rendimiento del proyecto.
+
+
 🔹 **Seguridad**: Cada acción queda registrada, garantizando que nada se pierda.
+
+
 🔹 **Flexibilidad**: No es necesario seguir un camino único en el desarrollo; puedes experimentar sin perder el control.
 
 ---
